@@ -125,7 +125,10 @@ const workoutSeed = [
   },
 ];
 
+
+// deleteMany is similar to drop the database
 db.Workout.deleteMany({})
+// allows us to add multiple seeds at once
   .then(() => db.Workout.collection.insertMany(workoutSeed))
   .then((data) => {
     console.log(data.result.n + ' records inserted!');
