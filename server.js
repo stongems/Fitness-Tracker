@@ -14,8 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 // Makes public the home URL
 app.use(express.static("public"));
 
+
+// Creates a routing server
 app.use(require("./controller/htmlRoutes"));
 app.use(require("./controller/apiRoutes"));
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout")
 
  app.listen(PORT, () => console.log('Now listening'));
  
