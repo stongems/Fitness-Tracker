@@ -6,7 +6,7 @@ HW #18 UofA coding bootcamp
 
 This is a workout tracking application; it runs using mongoose, node, using a mongodb database and is deployed on heroku
 
-
+[Heroku link] https://fitnessms.herokuapp.com/
 
 
 ## Table of Contents
