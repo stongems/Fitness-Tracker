@@ -19,7 +19,7 @@ router.post("/api/workouts", (req, res) => {
 });
 
 router.put("/api/workouts/:id", (req, res) => {
-  console.log(req.body)
+  console.log(req)
     db.Workout.updateOne(
     { _id: req.params.id },
     // $push is a mongoose function to push data into an array 
